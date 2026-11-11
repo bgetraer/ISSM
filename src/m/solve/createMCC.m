@@ -20,7 +20,7 @@ function createMCC(filename)
 
 % check if mccfiles directory exists in current directory
 if exist('./mccfiles','dir')
-	system('rm ./mccfiles/* ');
+	delete('./mccfiles/*');
 else
 	mkdir('./mccfiles');
 end
